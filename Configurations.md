@@ -471,6 +471,13 @@ fn main() {
 }
 ```
 
+## `paren_style`
+
+Parenthesis style for control flow constructs
+
+- **Default value**: `"AlwaysSameLine"`
+- **Possible values**: `"AlwaysNextLine"`, `"AlwaysSameLine"`, `"ClosingNextLine"`
+
 ## `control_brace_style`
 
 Brace style for control flow constructs

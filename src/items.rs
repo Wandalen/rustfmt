@@ -15,7 +15,7 @@ use crate::comment::{
     FindUncommented,
 };
 use crate::config::lists::*;
-use crate::config::{BraceStyle, Config, IndentStyle, Version};
+use crate::config::{BraceStyle, Config, ControlBraceStyle, IndentStyle, Version};
 use crate::expr::{
     is_empty_block, is_simple_block_stmt, rewrite_assign_rhs, rewrite_assign_rhs_with,
     rewrite_assign_rhs_with_comments, RhsAssignKind, RhsTactics,
@@ -2220,7 +2220,13 @@ fn rewrite_fn_base(
         one_line_budget, multi_line_budget, param_indent
     );
 
-    result.push('(');
+    /* xxx */
+    if context.config.paren_style() == ControlBraceStyle::AlwaysNextLine {
+        result.push_str("(");
+    } else {
+        result.push_str("(");
+    }
+
     // Check if vertical layout was forced.
     if one_line_budget == 0
         && !snuggle_angle_bracket

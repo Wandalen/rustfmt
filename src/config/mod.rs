@@ -121,6 +121,8 @@ create_config! {
     fn_args_layout: Density, Density::Tall, true,
         "Control the layout of arguments in a function";
     brace_style: BraceStyle, BraceStyle::SameLineWhere, false, "Brace style for items";
+    paren_style: ControlBraceStyle, ControlBraceStyle::AlwaysSameLine, false, "Paren style for \
+        items";
     control_brace_style: ControlBraceStyle, ControlBraceStyle::AlwaysSameLine, false,
         "Brace style for control flow constructs";
     trailing_semicolon: bool, true, false,
@@ -597,6 +599,7 @@ match_arm_leading_pipes = "Never"
 force_multiline_blocks = false
 fn_args_layout = "Tall"
 brace_style = "SameLineWhere"
+paren_style = "AlwaysSameLine"
 control_brace_style = "AlwaysSameLine"
 trailing_semicolon = true
 trailing_comma = "Vertical"
