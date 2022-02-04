@@ -47,6 +47,42 @@ pub enum ControlBraceStyle {
     AlwaysNextLine,
 }
 
+// zzz : added
+#[config_type]
+/// Where to put the opening brace of struct.
+pub enum StructBraceStyle {
+    /// K&R style, Rust community default
+    AlwaysSameLine,
+    /// Stroustrup style
+    ClosingNextLine,
+    /// Next line only if tall
+    NextLineIfTall,
+}
+
+// zzz : added
+#[config_type]
+/// Where to put the opening parenthesis.
+pub enum ParenStyle {
+    /// K&R style, Rust community default
+    AlwaysSameLine,
+    /// Allman style
+    AlwaysNextLine,
+    /// Next line only if tall
+    NextLineIfTall,
+}
+
+// zzz : added
+#[config_type]
+/// Where to put the opening bracket.
+pub enum BracketStyle {
+    /// K&R style, Rust community default
+    AlwaysSameLine,
+    /// Allman style
+    AlwaysNextLine,
+    /// Next line only if tall
+    NextLineIfTall,
+}
+
 #[config_type]
 /// How to indent.
 pub enum IndentStyle {

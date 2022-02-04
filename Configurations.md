@@ -471,12 +471,61 @@ fn main() {
 }
 ```
 
-## `paren_style`
+## `struct_brace_style`
 
-Parenthesis style for control flow constructs
+<!-- zzz : added -->
+Brace style for control flow constructs
 
 - **Default value**: `"AlwaysSameLine"`
-- **Possible values**: `"AlwaysNextLine"`, `"AlwaysSameLine"`, `"ClosingNextLine"`
+- **Possible values**: `"AlwaysNextLine"`, `"AlwaysSameLine"`, `"NextLineIfTall"`
+
+## `paren_style`
+
+<!-- zzz : added -->
+Parenthesis style
+
+- **Default value**: `"AlwaysSameLine"`
+- **Possible values**: `"AlwaysNextLine"`, `"AlwaysSameLine"`, `"NextLineIfTall"`
+
+## `bracket_style`
+
+<!-- zzz : added -->
+Bracket style
+
+- **Default value**: `"AlwaysSameLine"`
+- **Possible values**: `"AlwaysNextLine"`, `"AlwaysSameLine"`, `"NextLineIfTall"`
+
+## `in_brace_space`
+
+<!-- zzz : added -->
+In brace space
+
+- **Default value**: `true`
+- **Possible values**: `true`, `false`
+
+## `in_paren_space`
+
+<!-- zzz : added -->
+In parenthesis space
+
+- **Default value**: `false`
+- **Possible values**: `true`, `false`
+
+## `in_bracket_space`
+
+<!-- zzz : added -->
+In bracket space
+
+- **Default value**: `false`
+- **Possible values**: `true`, `false`
+
+## `in_angle_space`
+
+<!-- zzz : added -->
+In angle space
+
+- **Default value**: `false`
+- **Possible values**: `true`, `false`
 
 ## `control_brace_style`
 

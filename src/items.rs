@@ -15,7 +15,7 @@ use crate::comment::{
     FindUncommented,
 };
 use crate::config::lists::*;
-use crate::config::{BraceStyle, Config, ControlBraceStyle, IndentStyle, Version};
+use crate::config::{BraceStyle, Config, IndentStyle, ParenStyle, Version};
 use crate::expr::{
     is_empty_block, is_simple_block_stmt, rewrite_assign_rhs, rewrite_assign_rhs_with,
     rewrite_assign_rhs_with_comments, RhsAssignKind, RhsTactics,
@@ -2221,7 +2221,7 @@ fn rewrite_fn_base(
     );
 
     /* xxx */
-    if context.config.paren_style() == ControlBraceStyle::AlwaysNextLine {
+    if context.config.paren_style() == ParenStyle::AlwaysNextLine {
         result.push_str("(");
     } else {
         result.push_str("(");
